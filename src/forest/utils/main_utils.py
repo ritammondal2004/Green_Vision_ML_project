@@ -7,6 +7,7 @@ from src.forest.exception import ForestException
 from src.forest.logger import logging
 
 
+
 def read_yaml_file(file_path: str) -> dict:
     try:
         with open(file_path, "rb") as yaml_file:
