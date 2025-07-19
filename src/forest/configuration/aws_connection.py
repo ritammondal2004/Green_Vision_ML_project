@@ -28,7 +28,7 @@ class S3Client:
                                               region_name = region_name
                                               )  
             
-        self.S3_client = S3Client.S3_client
-        self.S3_resource = S3Client.S3_resource 
+        self.S3_client = S3Client.S3_client            
+        self.S3_resource = S3Client.S3_resource       
             
  
