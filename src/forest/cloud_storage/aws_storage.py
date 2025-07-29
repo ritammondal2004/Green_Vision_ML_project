@@ -11,6 +11,7 @@ from botocore.exceptions import ClientError
 from pandas import DataFrame, read_csv
 import pickle 
 
+
 class SimpleStorageService:
 
     def __init__(self):
@@ -39,9 +40,6 @@ class SimpleStorageService:
 
         Output      :   The column name is renamed
         On Failure  :   Write an exception log and then raise an exception
-
-        Version     :   1.2
-        Revisions   :   moved setup to cloud
         """
         logging.info("Entered the read_object method of S3Operations class")
 

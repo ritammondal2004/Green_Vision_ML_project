@@ -8,7 +8,7 @@ class S3Client:
     S3_client, S3_resource = None, None
 
     def __init__(self, region_name=os.environ['AWS_DEFAULT_REGION']):
-
+                 
         if S3Client.S3_resource==None or S3Client.S3_client==None:
             __access_key_id = os.environ['AWS_ACCESS_KEY_ID']
             __secret_access_key = os.environ['AWS_SECRET_ACCESS_KEY']
