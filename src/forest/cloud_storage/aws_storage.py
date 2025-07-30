@@ -11,8 +11,8 @@ from botocore.exceptions import ClientError
 from pandas import DataFrame, read_csv
 import pickle 
 
-
-class SimpleStorageService:
+                                  
+class SimpleStorageService: 
 
     def __init__(self):
         s3_client = S3Client()
@@ -37,13 +37,11 @@ class SimpleStorageService:
         """
         Method Name :   read_object
         Description :   This method reads the object_name object with kwargs
-
-        Output      :   The column name is renamed
-        On Failure  :   Write an exception log and then raise an exception
+                           
         """
         logging.info("Entered the read_object method of S3Operations class")
-
-        try:
+                           
+        try:           
             # Check if object_name is None
             if object_name is None:
                 raise ForestException("Object is None. Cannot read from None object.", sys)

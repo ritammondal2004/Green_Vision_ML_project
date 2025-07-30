@@ -6,7 +6,8 @@ from src.forest.utils.main_utils import load_numpy_array_data, read_yaml_file, l
 from src.forest.entity.config_entity import ModelTrainerConfig
 from src.forest.entity.artifact_entity import DataTransformationArtifact, ModelTrainerArtifact, ClassificationMetricArtifact
 from src.forest.entity.estimator import SensorModel
-from neuro_mf  import ModelFactory
+from neuro_mf import ModelFactory
+
 
 class ModelTrainer:
     def __init__(self, data_transformation_artifact:DataTransformationArtifact, model_trainer_config: ModelTrainerConfig):

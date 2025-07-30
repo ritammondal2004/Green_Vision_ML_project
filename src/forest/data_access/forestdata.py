@@ -4,7 +4,7 @@ from src.forest.exception import ForestException
 from src.forest.logger import logging
 import pandas as pd
 import sys
-import typing as Optional
+from typing import Optional 
 import numpy as np 
 
 class ForestData:
@@ -18,7 +18,7 @@ class ForestData:
         except Exception as e:
               raise ForestException(e, sys) 
         
-    def export_collection_as_dataframe(self, collection_name:str,db_name:Optional[str]=None) -> pd.DataFrame:
+    def export_collection_as_dataframe(self, collection_name:str,db_name: Optional[str]=None) -> pd.DataFrame:
         """
         Export entire collection as dataframe:
         return pd.DataFrame of collection
